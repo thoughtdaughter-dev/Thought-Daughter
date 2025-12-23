@@ -1,45 +1,48 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Thought Daughter</title>
-  <link rel="stylesheet" href="style.css">
+body {
+  margin: 0;
+  font-family: Georgia, serif;
+  background: #f6f4f1; /* soft beige */
+  color: #111;
+}
 
-  <!-- INLINE STYLE TO FORCE HOT PINK BACKGROUND -->
-  <style>
-    body {
-      background: hotpink !important;
-    }
-  </style>
-</head>
+/* HEADER */
+.header {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 30px 40px;
+  border-bottom: 1px solid #ddd;
+}
 
-<body>
+.icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: #ccc;
+}
 
-  <!-- HEADER -->
-  <div class="header">
-    <div class="icon"></div>
-    <h1>Thought Daughter</h1>
-  </div>
+/* MAIN LAYOUT */
+.main {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 40px;
+  padding: 40px;
+}
 
-  <!-- MAIN CONTENT -->
-  <div class="main">
+.left {
+  background: #ddd;
+  height: 350px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #555;
+}
 
-    <!-- LEFT SIDE -->
-    <div class="left">
-      <p>image goes here</p>
-    </div>
+.meta {
+  font-weight: bold;
+}
 
-    <!-- RIGHT SIDE -->
-    <div class="right">
-      <p class="meta">#01 · Article title</p>
-      <p class="date">12 October 2025</p>
-      <p>
-        This is where your article text will go.
-        You will replace this every week.
-      </p>
-    </div>
-
-  </div>
-
-</body>
-</html>
+.date {
+  font-size: 14px;
+  color: #666;
+}
