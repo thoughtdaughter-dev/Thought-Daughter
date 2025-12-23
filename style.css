@@ -1,5 +1,48 @@
-div {
-  border: 1px solid red;
-  padding: 20px;
-  margin: 10px;
+body {
+  margin: 0;
+  font-family: Georgia, serif;
+  background: #f6f4f1;
+  color: #111;
+}
+
+/* HEADER */
+.header {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 30px 40px;
+  border-bottom: 1px solid #ddd;
+}
+
+.icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: #ccc;
+}
+
+/* MAIN LAYOUT */
+.main {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 40px;
+  padding: 40px;
+}
+
+.left {
+  background: #ddd;
+  height: 350px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #555;
+}
+
+.meta {
+  font-weight: bold;
+}
+
+.date {
+  font-size: 14px;
+  color: #666;
 }
