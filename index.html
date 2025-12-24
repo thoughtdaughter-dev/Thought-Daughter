@@ -1,111 +1,33 @@
-/* Reset some defaults */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Helvetica', sans-serif;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Thought Daughter</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-/* Body background & text color */
-body {
-  background-color: #f9f9f9; /* light background */
-  color: #111; /* text color */
-}
+<header class="site-header">
+  Thought Daughter
+</header>
 
-/* Header style */
-.site-header {
-  font-family: 'Georgia', serif;
-  font-size: 3rem;
-  text-align: center;
-  padding: 2rem 1rem;
-  border-bottom: 1px solid rgba(0,0,0,0.2);
-  background-color: rgba(255,255,255,0.95);
-  position: sticky;
-  top: 0;
-  z-index: 50;
-}
+<main class="container">
+  <div class="image">
+    <img src="ladybug.jpg" alt="Featured article image">
+  </div>
+  <div class="text">
+    <p class="recent">— RECENT THINK…</p>
+    <h1>On the Quiet Beauty of Slow Mornings</h1>
+    <p class="date">DECEMBER 23, 2025</p>
+    <p class="desc">Why rushing through the first hours of the day steals more than just time.</p>
+  </div>
+</main>
 
-/* Main container layout */
-.container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  max-width: 1200px;
-  margin: 2rem auto;
-  gap: 2rem;
-  padding: 0 1rem;
-}
+<section class="article">
+  <h2>#01 – Article Name</h2>
+  <p>Article goes here</p>
+</section>
 
-/* Image styling */
-.image {
-  flex: 1 1 400px;
-  max-width: 500px;
-  overflow: hidden;
-  border-radius: 12px;
-}
-
-.image img {
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-  transition: transform 1s;
-}
-
-.image img:hover {
-  transform: scale(1.05);
-}
-
-/* Text content */
-.text {
-  flex: 1 1 400px;
-  max-width: 500px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.recent {
-  font-size: 0.8rem;
-  letter-spacing: 2px;
-  color: #00f; /* blue accent */
-  margin-bottom: 0.5rem;
-  text-transform: uppercase;
-}
-
-.text h1 {
-  font-family: 'Georgia', serif;
-  font-size: 2.5rem;
-  line-height: 1.2;
-  margin-bottom: 1rem;
-}
-
-.date {
-  font-size: 0.8rem;
-  text-transform: uppercase;
-  color: #777;
-  margin-bottom: 1rem;
-}
-
-.desc {
-  font-size: 1rem;
-  line-height: 1.5;
-  color: #0077cc;
-}
-
-/* Article section */
-.article {
-  max-width: 800px;
-  margin: 4rem auto;
-  padding: 0 1rem;
-}
-
-.article h2 {
-  font-family: 'Georgia', serif;
-  font-size: 2rem;
-  margin-bottom: 1rem;
-}
-
-.article p {
-  font-size: 1rem;
-  line-height: 1.5;
-}
+</body>
+</html>
