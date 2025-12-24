@@ -23,17 +23,18 @@ body {
   color: #FF1493;
   z-index: 1000;
   border-bottom: 1px solid #eee;
+  font-family: 'Playfair Display', serif; /* Updated font */
 }
 
 /* Main container using grid */
 .container {
   display: grid;
-  grid-template-columns: 1.4fr 1fr; /* similar to AI design */
+  grid-template-columns: 1.4fr 1fr;
   gap: 40px;
   max-width: 1200px;
   margin: 60px auto 0;
   padding: 0 20px;
-  min-height: 85vh; /* makes hero fill screen */
+  min-height: 85vh;
 }
 
 /* Image wrapper */
@@ -74,6 +75,7 @@ body {
   padding: 1rem;
   font-size: 2.5rem;
   line-height: 1.2;
+  font-family: 'Playfair Display', serif; /* Updated font */
 }
 
 .date {
@@ -98,6 +100,7 @@ body {
   color: #ff4189;
   font-size: 2rem;
   margin-bottom: 1rem;
+  font-family: 'Playfair Display', serif; /* Updated font */
 }
 
 .article p {
