@@ -4,7 +4,7 @@
 
 body {
   margin: 0;
-  background: #fff6c9;
+  background: #FDF9C3;
   font-family: Georgia, serif;
 }
 
@@ -12,11 +12,11 @@ body {
 .site-header {
   position: sticky;
   top: 0;
-  background: #fff6c9;
+  background: #FDF9C3;
   padding: 20px 0;
   text-align: center;
   font-size: 48px;
-  color: #ff4189;
+  color: #FF1493;
   z-index: 1000;
   border-bottom: 1px solid #eee;
 }
