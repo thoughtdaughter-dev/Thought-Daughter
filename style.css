@@ -1,27 +1,33 @@
+/* Reset */
 * {
   box-sizing: border-box;
-}
-
-body {
   margin: 0;
-  background: #FDF9C3;
-  font-family: Georgia, serif;
+  padding: 0;
 }
 
-/* sticky header */
+/* Body */
+body {
+  font-family: Georgia, serif;
+  background: #FDF9C3;
+  color: #000;
+  min-height: 100vh;
+}
+
+/* Header */
 .site-header {
   position: sticky;
   top: 0;
-  background: #FDF9C3;
+  background: rgba(253, 249, 195, 0.95);
   padding: 20px 0;
   text-align: center;
   font-size: 48px;
   color: #FF1493;
-  z-index: 1000;
   border-bottom: 1px solid #eee;
+  backdrop-filter: blur(5px);
+  z-index: 1000;
 }
 
-/* main section */
+/* Main container */
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -29,24 +35,29 @@ body {
   display: grid;
   grid-template-columns: 1.4fr 1fr;
   gap: 60px;
-  overflow-x: hidden; /* IMPORTANT */
+  overflow-x: hidden;
 }
 
-/* image wrapper */
+/* Image wrapper */
 .image {
   width: 110%;
   max-width: 490px;
-  margin-left: -5%; /* balances the overflow */
+  margin-left: -5%;
+  overflow: hidden;
 }
 
-/* image itself */
 .image img {
   width: 100%;
   height: auto;
   display: block;
+  transition: transform 1s ease;
 }
 
-/* text block */
+.image:hover img {
+  transform: scale(1.05);
+}
+
+/* Text block */
 .text {
   display: flex;
   flex-direction: column;
@@ -57,14 +68,17 @@ body {
   font-size: 12px;
   letter-spacing: 2px;
   margin-bottom: 20px;
+  text-transform: uppercase;
+  color: #0d6efd;
 }
 
 .text h1 {
-  background: #b9ff7a;
+  background: linear-gradient(120deg, rgba(57, 255, 20, 0.4) 0%, rgba(57, 255, 20, 0.3) 100%);
   padding: 20px;
-  margin: 0 0 20px 0;
+  margin-bottom: 20px;
   font-size: 42px;
-  line-height: 1.1;
+  line-height: 1.2;
+  display: inline-block;
 }
 
 .date {
@@ -78,7 +92,7 @@ body {
   line-height: 1.6;
 }
 
-/* article */
+/* Article section */
 .article {
   max-width: 800px;
   margin: 0 auto;
@@ -90,10 +104,21 @@ body {
   margin-bottom: 30px;
 }
 
-/* mobile fix */
+/* Footer (optional) */
+footer {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 60px 40px;
+  text-align: center;
+  color: #555;
+  border-top: 1px solid #eee;
+}
+
+/* Mobile responsiveness */
 @media (max-width: 768px) {
   .container {
     grid-template-columns: 1fr;
+    padding: 40px 20px;
   }
 
   .image {
@@ -103,6 +128,10 @@ body {
   }
 
   .site-header {
+    font-size: 32px;
+  }
+
+  .text h1 {
     font-size: 32px;
   }
 }
